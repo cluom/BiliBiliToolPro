@@ -63,7 +63,7 @@ namespace Ray.BiliBiliTool.Application
             UserInfo userInfo = Login();
             DailyTaskInfo dailyTaskInfo = GetDailyTaskStatus();
             WatchAndShareVideo(dailyTaskInfo);
-            AddCoinsForVideo();
+            AddCoinsForVideo(userInfo);
 
             //签到：
             LiveSign();
