@@ -124,7 +124,7 @@ namespace Ray.BiliBiliTool.Application
         [TaskInterceptor("投币", rethrowWhenException: false)]
         private void AddCoinsForVideo()
         {
-            _donateCoinDomainService.AddCoinsForVideos();
+            _donateCoinDomainService.AddCoinsForVideos(userInfo);
         }
 
         /// <summary>
